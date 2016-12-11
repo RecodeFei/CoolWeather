@@ -1,13 +1,13 @@
 package app.coolweather.com.coolweather.model;
-
-/**
- * Created by feikuang on 2016/10/9.
- */
 public class City {
+
     private int id;
+
     private String cityName;
+
     private String cityCode;
-    private int provinceid;
+
+    private int provinceId;
 
     public int getId() {
         return id;
@@ -33,11 +33,12 @@ public class City {
         this.cityCode = cityCode;
     }
 
-    public int getProvinceid() {
-        return provinceid;
+    public int getProvinceId() {
+        return provinceId;
     }
 
-    public void setProvinceid(int provinceid) {
-        this.provinceid = provinceid;
+    public void setProvinceId(int provinceId) {
+        this.provinceId = provinceId;
     }
+
 }
