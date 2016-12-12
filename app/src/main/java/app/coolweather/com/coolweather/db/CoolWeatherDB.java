@@ -1,10 +1,5 @@
 package app.coolweather.com.coolweather.db;
 
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,6 +7,11 @@ import app.coolweather.com.coolweather.model.City;
 import app.coolweather.com.coolweather.model.County;
 import app.coolweather.com.coolweather.model.Province;
 
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 
 public class CoolWeatherDB {
 
@@ -25,7 +25,7 @@ public class CoolWeatherDB {
      */
     public static final int VERSION = 1;
 
-    private static CoolWeatherDB dbConnector;
+    private static CoolWeatherDB coolWeatherDB;
 
     private SQLiteDatabase db;
 
@@ -39,13 +39,13 @@ public class CoolWeatherDB {
     }
 
     /**
-     * 获取DBConnector的实例。
+     * 获取CoolWeatherDB的实例。
      */
     public synchronized static CoolWeatherDB getInstance(Context context) {
-        if (dbConnector == null) {
-            dbConnector = new CoolWeatherDB(context);
+        if (coolWeatherDB == null) {
+            coolWeatherDB = new CoolWeatherDB(context);
         }
-        return dbConnector;
+        return coolWeatherDB;
     }
 
     /**
