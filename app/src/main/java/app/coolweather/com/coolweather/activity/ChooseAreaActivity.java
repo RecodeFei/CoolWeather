@@ -20,7 +20,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import app.coolweather.com.coolweather.R;
+import com.coolweather.app.R;
 import app.coolweather.com.coolweather.db.CoolWeatherDB;
 import app.coolweather.com.coolweather.model.City;
 import app.coolweather.com.coolweather.model.County;

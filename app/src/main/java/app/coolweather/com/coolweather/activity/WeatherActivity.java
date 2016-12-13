@@ -15,7 +15,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import app.coolweather.com.coolweather.R;
+import com.coolweather.app.R;
 import app.coolweather.com.coolweather.service.AutoUpdateService;
 import app.coolweather.com.coolweather.util.HttpCallbackListener;
 import app.coolweather.com.coolweather.util.HttpUtil;
@@ -89,9 +89,9 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		//实例化广告条
 	    AdView adView = new AdView(this, AdSize.FIT_SCREEN);
 	    //获取要嵌入广告条的布局
-	    LinearLayout adLayout=(LinearLayout)findViewById(R.id.adLayout);
+	    //LinearLayout adLayout=(LinearLayout)findViewById(R.id.);
 	    //将广告条加入到布局中
-	    adLayout.addView(adView);
+	    //adLayout.addView(adView);
 	}
 	
 	@Override
