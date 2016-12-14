@@ -89,9 +89,9 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		//实例化广告条
 	    AdView adView = new AdView(this, AdSize.FIT_SCREEN);
 	    //获取要嵌入广告条的布局
-	    //LinearLayout adLayout=(LinearLayout)findViewById(R.id.);
+	    LinearLayout adLayout=(LinearLayout)findViewById(R.id.adLayout);
 	    //将广告条加入到布局中
-	    //adLayout.addView(adView);
+	    adLayout.addView(adView);
 	}
 	
 	@Override
